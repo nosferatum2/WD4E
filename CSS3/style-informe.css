@@ -1,0 +1,44 @@
+/*This's my first CSS3 file!*/
+/*Element Type Selector*/
+body {
+	font-family: Arial, sans-serif;
+	color: #555;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+/*Class Selector - class="navigation"*/
+.navigation {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*ID Selector - id="navigation" */
+/*In HTML, a page will have validation errors if two or more elements share the same ID.*/
+#navigation {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*Universal selector matches any 
+element within the context in which it’s placed in a selector.*/
+.navigation ul * {
+	width: 100px;
+	float: left;
+}
+
+/*Attribute selector - style="[anything]"*/
+p[style] {
+	color: #1e1e1e;
+}
+/*The example below targets certain input elements based on the existence of 
+a type attribute with a value of “text”:*/
+input[type="text"] {
+	border: solid 1px #ccc;
+}
+
+/*Pseudo-Class*/
+/* the word "hover" along with the preceding colon is the pseudo-class */
+a:hover {
+  text-decoration: none;
+}

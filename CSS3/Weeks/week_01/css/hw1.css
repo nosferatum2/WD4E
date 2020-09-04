@@ -1,0 +1,51 @@
+body{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 120%;
+	display: table;
+}
+
+header{
+	background-color: #b2b2b2; /*Light grey*/
+}
+
+/*new background color*/
+section{
+	background-color: #7f7f7f; /*Dark grey*/
+	margin-top: 25px;
+	width: 800px;
+	float: left;
+	clear: both;
+}
+
+/*heading is displayed in all capital letters*/
+h1, h2{
+	font-variant: all-petite-caps;
+	/*font-size: 120%;*/
+}
+
+/*centered and have a new font color*/
+h1{
+	text-align: center;
+	color: #ffffff;
+}
+
+/*new font color*/
+h2{
+	color: #000080; /*dark blue*/
+}
+
+a{
+	background-color: #c5c5c5; /*lighter grey*/
+	color: #000000; /*black*/
+}
+
+
+.right a{
+	background-color: #9f9f9f;
+}
+
+/*Off image*/
+img{
+	display: none;
+}
+

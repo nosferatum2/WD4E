@@ -1,0 +1,26 @@
+a {
+	color: #FFFFFF;
+}
+
+span {
+	height: 50px;
+	width: 75px;
+	background: #00ff00;
+	float: left; /*Удаляет интервал между элементами - "сжимает" и выбираем выравнивание*/
+	clear: both;
+}
+
+div{
+	height: 50px;
+	width: 45px;
+	background: #00ffff;
+	clear: both; /*Делает так, чтоб элемент div не наезжал на span при float*/
+	float: right;
+}
+
+p{
+	background: #ff00ff;
+	width: 200px;
+	height: 100px;
+	clear: both; /*Делает так, чтоб элемент 'p' не наезжал на div при float*/
+}

@@ -1,0 +1,46 @@
+header {
+	background: #666666;
+	text-align: center;
+	line-height: 200%;
+	/*display: table; Нужно для того, чтоб дивы построить в нормльную таблицу/сетку*/
+}
+
+h1 {
+	font-size: 150%;
+	color: #FFFFFF;
+	background-color: #B3B3B3;
+}
+
+nav {
+	font-variant: small-caps;
+	font-size: 150%;
+	font-family: Arial, "Times New Roman", serif;
+	text-align: left;
+}
+
+section {
+	line-height: 150%;
+}
+
+ul {
+	color: blue;
+	font-family: Arial;
+}
+
+h2 {
+	color: #FFFFFF;
+	background-color: #00B7EA;
+}
+
+progress, p {
+	position: static;
+}
+
+details{
+	font-style: italic;
+}
+
+summary{
+	font-style: normal;
+}
+
