@@ -1,6 +1,6 @@
 header {
 	background: #666666;
-	text-align: center;
+	/*text-align: center;*/
 	line-height: 200%;
 	/*display: table; Нужно для того, чтоб дивы построить в нормльную таблицу/сетку*/
 }
@@ -9,6 +9,7 @@ h1 {
 	font-size: 150%;
 	color: #FFFFFF;
 	background-color: #B3B3B3;
+	text-align: center;
 }
 
 nav {
@@ -44,3 +45,12 @@ summary{
 	font-style: normal;
 }
 
+
+/*Find those value
+a[href^="../index"] - ^ beginning
+ing[src$='.png'] - $ apply to .png images
+a[href*='umich'] - * fond all 'umich'*/
+
+/*a[href="../index.html"]{
+	color: #000000;
+}*/

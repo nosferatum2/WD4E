@@ -39,7 +39,6 @@ section{
 
 /*LISTS STYLE*/
 div{
-	width:30%;
 	margin-right: 2%;
 	clear: both;
 	display: inline-block;
@@ -75,14 +74,17 @@ img{
 nav a {
 	display: inline-block both;
 	font-weight: bold;
+	font-size: 1em; 
 	color: #ffffff;
 	background-color: #0006CC;
 	width: 200px;
 	text-align: center;
-	padding: 4px;
+	padding: 0.1em;
 	text-decoration: none;
 	margin: 0 auto;
-	margin-top: 10px;
+	margin-top: 10%;
+	border-radius: 0.2em;
+	white-space: nowrap;
 }
 
 /*Normal link*/
@@ -110,4 +112,47 @@ a:focus{
 /*is being clicked*/
 a:active{
 
+}
+
+/*================= Pseudo-elements ===================*/
+.arrow {
+  margin-top: auto;
+  width: auto;
+  background: #2db34a;
+  color: #fff;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 12px;
+  position: relative;
+  text-decoration: none;
+}
+.arrow:before,
+.arrow:after {
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+.arrow:before {
+  border-bottom: 15px solid #2db34a;
+  border-left: 15px solid transparent;
+  border-top: 15px solid #2db34a;
+  left: -15px;
+}
+.arrow:after {
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #2db34a;
+  border-top: 15px solid transparent;
+  right: -15px;
+}
+.arrow:hover {
+  background: #ff7b29;
+}
+.arrow:hover:before {
+  border-bottom: 15px solid #ff7b29;
+  border-top: 15px solid #ff7b29;
+}
+.arrow:hover:after {
+  border-left: 15px solid #ff7b29;
 }
