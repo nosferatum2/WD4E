@@ -1,0 +1,99 @@
+body{
+	font-family: "Times New Roman", Times, serif;
+	margin: 0 auto; /*center our page*/
+	padding: 15px;
+	width: 900px;
+	display: table;
+	box-sizing: border-box; /*doing a box model*/
+}
+
+/*====== Adding bacground image, set size of header ======*/
+header{
+	background: #202020 url("../images/flywheel.jpg") no-repeat top;
+	padding: 20px;
+	text-align: center;
+	width: 900px;
+	height: 105px;
+}
+
+/*====== centered and have a new font properties ======*/
+h1{
+	color: #ffffff; /*white*/
+	font-size: x-large;
+	font-variant: all-petite-caps;
+	font-weight: 600;
+	margin-top: 0px;
+}
+
+/*====== Styling the navigation bar links and do them capacity (0.4) ======*/
+nav > a {
+	display: inline-block;
+	margin: 0 3%;
+	color: #000000;
+	background-color: #ffffff66; /*rgba(255, 255, 255, 0.4) #ffffff66 in hex '66'(40%) capacity level - Hexadecimal color code for transparency*/ 
+	width: 150px;
+	padding: 13px 0px;
+	font-size: 1em;
+	border-radius: 0.2em;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+/*Normal link*/
+nav > a:link{
+
+}
+
+/*Visited link*/
+nav > a:visited{
+
+}
+
+/*actived by mouse. MUST come after a:link*/
+nav > a:hover{
+	background-color: #d1d1d1; /*light grey*/
+	color: #0099ff; /*light blue*/
+}
+
+/*actived with the keyboard*/
+nav > a:focus{
+	background-color: #B1B1B1; /*dark grey*/
+	color: #ff6600; /*orange*/
+}
+
+/*White color of the active link*/
+.active{
+	background-color: #ffffff; /*white*/
+}
+
+/*====== heading is displayed in a capital letters ======*/
+h2{
+	font-variant: small-caps;
+	font-weight: bolder;
+}
+
+/*decorate and align images*/
+img{
+	box-sizing: border-box;
+	width: 70%;
+	border: 2px solid #000000; /*black*/
+	margin: 0 auto;
+	/*margin: 20px 25px;*/
+}
+
+/*align and do better for a view aside and section*/
+.left, .right{
+	/*display: table-caption;*/
+	float: left;
+}
+
+.left{
+	background: #777613; /*dark olive*/
+	text-align: center;
+	width: 28%;
+}
+
+.right{
+	width: 72%;
+}
+

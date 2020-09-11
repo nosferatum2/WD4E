@@ -1,7 +1,8 @@
 header {
 	background: #666666;
-	/*text-align: center;*/
+	text-align: center;
 	line-height: 200%;
+	padding: 15px;
 	/*display: table; Нужно для того, чтоб дивы построить в нормльную таблицу/сетку*/
 }
 
@@ -35,6 +36,7 @@ h2 {
 
 progress, p {
 	position: static;
+	clear: both;
 }
 
 details{
@@ -43,6 +45,21 @@ details{
 
 summary{
 	font-style: normal;
+}
+
+/*Gradient*/
+header, footer{
+	background: #666666;
+	background: -moz-linear-gradient(top, #666666 0%, #00b7ea 100%);
+	background: -webkit-linear-gradient(#666666 0%, #00b7ea 100%);
+	background: -o-linear-gradient(#666666 0%, #00b7ea 100%);
+/*	background: -moz-linear-gradient(#666666 0%, #00b7ea 100%);*/
+}
+
+nav a {
+	display: inline-block left;
+	width: 6%;
+	background:#0006CC;
 }
 
 
