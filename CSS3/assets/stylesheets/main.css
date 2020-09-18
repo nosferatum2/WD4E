@@ -22,6 +22,7 @@ nav {
 
 section {
 	line-height: 150%;
+	clear: both;
 }
 
 ul {
@@ -62,7 +63,9 @@ nav a {
 	background:#0006CC;
 }
 
-
+#active{
+	background: #2db34a;
+}
 /*Find those value
 a[href^="../index"] - ^ beginning
 ing[src$='.png'] - $ apply to .png images

@@ -55,10 +55,11 @@ input:checked ~ nav {
   border-bottom: 0;
 }
 .toggle01 a {
-  color: #0087cc;
+  color: #ffffff;
   display: block;
   padding: 3px 6px;
   text-decoration: none;
+  width: 100%;
 }
 .toggle01 a:hover {
   color: #ff7b29;
