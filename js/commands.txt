@@ -1,0 +1,25 @@
+document.getElementById(is)
+document.getElementByClassName(class)
+element.innerHTML
+element.style
+element.setAttribute(attribute, value)
+element.removeAttribute(attribute)
+
+
+window.alert()
+window.prompt()
+documet.write()
+console.log()
+
+
+Mouse Events:
+onclick, ondblclick, onmousedown, onmouseenter, onmouseleave, onmousemove, onmouseout,.....
+
+Keyboard  Events:
+onkeydown, onkeypress, onkeyup
+
+Frame Events:
+onload, onresize, onscroll, onerror,....
+
+Comprehensive list:
+https://developer.mozilla.org/en-US/docs/Web/Events

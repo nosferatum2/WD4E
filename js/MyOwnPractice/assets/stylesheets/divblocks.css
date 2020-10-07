@@ -1,0 +1,27 @@
+a {
+	color: #FFFFFF;
+}
+
+span {
+	height: 50px;
+	width: 75px;
+	background: #00ff00;
+	float: left; /*Удаляет интервал между элементами - "сжимает" и выбираем выравнивание*/
+	clear: both;
+}
+
+div{
+	width: 30%;
+	background: #00ffff;
+	display: table-cell; /*Настраивает все дивы относительно самого длинного*/
+	/*height: 400px;*/
+	/*float: left;*/
+	/*overflow: ;*/
+}
+
+p{
+	background: #ff00ff;
+	width: 200px;
+	height: 100px;
+	clear: both; /*Делает так, чтоб элемент 'p' не наезжал на div при float*/
+}

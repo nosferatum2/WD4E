@@ -1,0 +1,160 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+nav a {
+	display: inline-block both;
+	font-weight: bold;
+	font-size: 1em; 
+	color: #ffffff;
+	background-color: #0006CC;
+	width: 200px;
+	text-align: center;
+	padding: 0.1em;
+	text-decoration: none;
+	margin: 0 auto;
+	margin-top: 10%;
+	border-radius: 0.2em;
+	white-space: nowrap;
+}
+
+/*Normal link*/
+nav a:link{
+
+}
+
+/*Visited link*/
+nav a:visited{
+
+}
+
+/*actived by mouse. MUST come after a:link*/
+nav a:hover{
+	background-color: #B3B3B3;
+	color: #0006CC;
+}
+
+/*actived with the keyboard*/
+nav a:focus{
+	background-color: #B3B3B3;
+	color: #0006CC;
+}
+
+/*is being clicked*/
+nav a:active{
+
+}
+
+
+/*================= TEST PSEUDO ====================*/
+
+.playpseudo {
+	display: inline-block;
+	color: #000000; 
+	background:#2db34a;
+	line-height: 150px;
+	text-align: center;
+	width: 200px;
+	height: 150px;
+	border: 2px solid #000000; /*black*/
+	/*border-radius: 6px;*/
+	/* ========= Here is a Tarnsitions ============= */
+	transition-property: color, width, background,border-radius;
+	transition-duration: .5s;
+	transition-timing-function: linear;
+	transition-delay: .5s;
+}
+
+
+.playpseudo:hover {
+	font-size: 1em; 
+	color: #ffffff;
+	width: 250px;
+	background: #2D31B3;
+	border-radius: 50%;
+}
+
+.playpseudo:active {
+	font-size: 1em;
+	color: #B3B3B3;
+	width: 200px;
+	background: #ffff00; /*yellow*/
+	border-radius: 20%;
+}
+/*a.playpseudo:hover{
+	font-size: 1em; 
+	text-decoration: none;
+	color: #ffffff;
+	width: 350px;
+	background: #2D31B3;
+	border-radius: 50%;
+}*/
+
+/* ===================== Button ================= */
+button {
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  border: 0;
+  box-sizing: border-box;
+  float: left;
+  clear: both;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  margin: 1.6% 3px;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+
+/* ===================== Animate =========================*/
+
+section div {
+	box-sizing: border-box;
+	border: 1px solid #000000;
+	width: 100px;
+	height: 100px;
+	margin: 2%;
+	padding: 2%;
+	display: inline-block;
+	transition: 2s ease;
+}
+
+section div:focus {
+	background-color: #ffff00; 
+}
+
+section div:hover{
+	width: 200px;
+	background-color: #800040; 
+}
+
+.animate{
+	background: #92B901;
+	-webkit-transition: -webkit-transform 1s, opacity 1s, background 1s, width 1s, height 1s, font-size 1s;
+	-webkit-border-radius: 5px;
+	-o-transition-property: width,height,-o-transform,background,font-size,opacity;
+	-o-transition-duration: 1s,1s,1s,1s,1s,1s;
+	-moz-transition-property: width,height,-o-transform,background,font-size,opacity;
+	-moz-transition-duration: 1s,1s,1s,1s,1s,1s;
+	transition-property: width,height,transform,background,font-size,opacity;
+	transition-duration: 1s,1s,1s,1s,1s,1s;
+	opacity: 0.4;
+}
+
+.animate:hover{
+	-webkit-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	transform: rotate(360deg);
+	opacity: 1;
+	background: #1ec7e6;
+	width: 110px;
+	height: 67px;
+}
