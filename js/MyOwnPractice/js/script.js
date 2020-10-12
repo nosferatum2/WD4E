@@ -4,11 +4,29 @@
 // document.write("<h1>Hello World!</h1>");
 
 
+// msg = "Trying to ConfirmMsg"
+// confirm(msg);
+
+// prompt("Test default content", ['Hello default!']);
+
+// function lenghtArr(arg1){
+//     var images = document.getElementsByTagName[arg1];
+//     // im = document.getElementsByTagName['p'];
+//     // document.getElementsByTagName('p').innerHTML = "Hello World";
+//     document.getElementById('lengthArray').innerHTML = images.lenght;    
+// }
+
+// lenghtArr('p');
+
+
+
 function sayHi(){
 	document.getElementById('test').innerHTML = "Hello World";
+    document.getElementsByTagName('p')[1].innerHTML = "Hello World";
+    
 }
 
-setTimeout(sayHi, 1000);
+setTimeout(sayHi, 100);
 
 // var name = prompt("What is your name?");
 // var date = Date();
@@ -46,3 +64,4 @@ back to the original text.  You can use the html code to see what that original 
 	document.getElementById('image').style.backgroundImage = "url('')";
 	document.getElementById('image').innerHTML = "Hover over an image below to display here.";
 }
+

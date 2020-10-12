@@ -6,11 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
 </head>
-<body>
-	<script type="text/javascript" src="js/gallery.js"></script>
+<body onload="lenghtArr('p')">
+	<script type="text/javascript" src="js/script.js"></script>
 	<h1 id = "test">Tester</h1>
-	<p>What happens if you have two elements with id = "test"</p>
-
 
 	<div id = "image">
 		Hover over an image below to display here.
@@ -22,6 +20,18 @@
 	
 	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
 
+		<p>What happens if you have two elements with id = "test0"</p>
+		<p>What happens if you have two elements with id = "test1"</p>
+		<p>What happens if you have two elements with id = "test2"</p>
+		<p>What happens if you have two elements with id = "test3"</p>
+
+		<a href = "http://www.umich.edu" onclick = "alert(this.href)">University of Michigan</a><br/>
+
+		<a href = "#" onclick = "alert(this.href)">University of Michigan </a><br/>	
+
+		<a href = "page2.html" onclick = "alert(this.href)">University of Michigan </a><br/>
+
+	<div id = "lengthArray">Hello!</div>
 
 
 

@@ -86,7 +86,7 @@ body{
 }
 #image{
     line-height:650px;
-	width: 575px;
+	width: 600px;
     height: 650px;
 	border:5px solid black;
 	margin:0 auto;
@@ -95,6 +95,7 @@ body{
     background-repeat: no-repeat;
     color:#FFFFFF;
     text-align: center;
+    word-break: break-word;
     background-size: 100%;
     margin-bottom:25px;
     font-size: 150%;
@@ -106,4 +107,8 @@ body{
 }
 img{
 	width:95%;
+}
+
+section{
+	border: 1px solid black;
 }
