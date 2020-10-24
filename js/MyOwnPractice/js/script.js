@@ -65,3 +65,33 @@ back to the original text.  You can use the html code to see what that original 
 	document.getElementById('image').innerHTML = "Hover over an image below to display here.";
 }
 
+
+//Numders valid between 1 and 5
+function numValid(){
+    var x, text;
+
+    x = document.getElementById('numb').value;
+
+    if (isNaN(x) || x < 1 || x > 5){
+        text = "Input not valid!";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById('demo').innerHTML = text;
+}
+
+//Match emails
+//I added else-block for myself. 
+function check() {
+    var email1 = document.getElementById('email_addr');
+    var email2 = document.getElementById('email_repeat');
+        if ( email1.value != email2.value) {
+            // alert("The two emails must match!!");
+            document.getElementById('noMatch').innerHTML = "The two emails must match!!";
+            return false;
+        } else {
+            document.getElementById('noMatch').innerHTML = "";
+            alert("Nice work! The form with emails is filled out correctly");
+
+        }
+}

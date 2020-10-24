@@ -6,9 +6,63 @@
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
 </head>
-<body onload="lenghtArr('p')">
+<body>
 	<script type="text/javascript" src="js/script.js"></script>
 	<h1 id = "test">Tester</h1>
+
+	<form>
+		<fieldset>
+			<legend>Personal Information</legend>
+			<!-- one way to add  -->
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" value="Artur"><br/>
+			<!-- another way to add -->
+			<label>Email:<br/><input type="email" name="email" placeholder="me@me.com"></label><br/>
+			<!-- different typy to add value -->
+			<label for="birth">Birth:</label>
+			<input type="date" id="birth" value="birth"><br/>
+
+			<label>Password:<br/><input type='password' name = 'pass'></label><br/>
+        
+			Radio Buttons<br/>
+			<label><input type="radio" name="sex" value="male" checked>Male</label>
+			<label><input type="radio" name="sex" value="female">Female</label><br/>
+
+			Checkboxes<br/>
+			<label> <input type="checkbox" name="contact1" value="Bike">Contact me via email</label>
+			<label> <input type="checkbox" name="contact2" value="Bike">Contact me via phone</label><br/>
+				
+			<label>Number: <input id="numb" type="number" name="numberInput" min="1" max="5">
+			</label> 
+				<div id=""></div> 
+				
+			<label>Range: <input type="range" name="rangeInput" min="1" max="10"></label>
+			<label>Color: <input type="color" name="colorInput" min="1" max="10"></label>
+			<label>Date: <input type="date" name="dateInput"></label><br/>
+			<label>URL: <input type="url" name="urlInput"></label><br/>
+			
+			<!-- Its needs to send a form -->
+			<input type = 'submit' value = "Click Here" onclick="numValid()" >
+		</fieldset>
+	</form>
+	<form>
+		<fieldset>
+			<legend>Check that the two email addresses Match exactly</legend>
+			<label>Preferred email address:
+	  			<input type="email" id="email_addr" name="email1" value = "me@me.com" required>
+	  		</label>
+
+	  		<label>Repeat email address:
+	  			<input type="email" id="email_repeat" name="email2" placeholder="me@me.com" required onchange="check()">
+	  			<!-- 
+	  			onchange - wait until we're done typing in the email address and have hit tab or enter to leave that field
+	  			oninput - react every time you type into the email form
+	  			-->
+	  		</label>
+	  		<div id="noMatch"></div>
+	  		<input type = 'submit' value = "Confirm Emails!" onclick="return check();">
+	  	</fieldset>
+	</form>
 
 	<div id = "image">
 		Hover over an image below to display here.

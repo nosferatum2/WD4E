@@ -112,3 +112,29 @@ img{
 section{
 	border: 1px solid black;
 }
+
+
+/*Form style*/
+
+form{
+	border: solid black;
+	border-width: 1px 0;
+	background: #00b7ea;
+	margin: 10px 0;
+	padding: 1%;
+	color: #FFFFFF;
+}
+
+legend{
+	font-weight: bolder;
+}
+
+label{
+	display: block;
+}
+
+#demo, #noMatch{
+	color: #000000;
+	font-weight: bolder;
+}
+
