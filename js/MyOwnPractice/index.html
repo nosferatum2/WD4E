@@ -10,6 +10,9 @@
 	<script type="text/javascript" src="js/script.js"></script>
 	<h1 id = "test">Tester</h1>
 
+	<nav>
+		<a href="pages/interactjs.html">Interactivity with JS</a>
+	</nav>
 	<form>
 		<fieldset>
 			<legend>Personal Information</legend>
@@ -45,24 +48,7 @@
 			<input type = 'submit' value = "Click Here" onclick="numValid()" >
 		</fieldset>
 	</form>
-	<form>
-		<fieldset>
-			<legend>Check that the two email addresses Match exactly</legend>
-			<label>Preferred email address:
-	  			<input type="email" id="email_addr" name="email1" value = "me@me.com" required>
-	  		</label>
 
-	  		<label>Repeat email address:
-	  			<input type="email" id="email_repeat" name="email2" placeholder="me@me.com" required onchange="check()">
-	  			<!-- 
-	  			onchange - wait until we're done typing in the email address and have hit tab or enter to leave that field
-	  			oninput - react every time you type into the email form
-	  			-->
-	  		</label>
-	  		<div id="noMatch"></div>
-	  		<input type = 'submit' value = "Confirm Emails!" onclick="return check();">
-	  	</fieldset>
-	</form>
 
 	<div id = "image">
 		Hover over an image below to display here.

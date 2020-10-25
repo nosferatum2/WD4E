@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Artur Voshchanikin</title>
+	<link rel="stylesheet" type="text/css" href="../reset.css">
+	<link rel="stylesheet" type="text/css" href="../assets/stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="../assets/stylesheets/login.css">
+	<script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+	<nav>
+		<a href="../index.html">come home</a>
+	</nav>
+	<main>
+	<form>
+		<fieldset>
+			<legend>Check that the two email addresses Match exactly</legend>
+			<label>Preferred email address:
+	  			<input type="email" id="email_addr" name="email1" value = "me@me.com" required>
+	  		</label>
+
+	  		<label>Repeat email address:
+	  			<input type="email" id="email_repeat" name="email2" placeholder="me@me.com" required onchange="check()">
+	  			<!-- 
+	  			onchange - wait until we're done typing in the email address and have hit tab or enter to leave that field
+	  			oninput - react every time you type into the email form
+	  			-->
+	  		</label>
+	  		<div id="noMatch"></div>
+	  		<input type = 'submit' value = "Confirm Emails!" onclick="return check();">
+	  	</fieldset>
+	</form>
+	<form>
+		<legend>Ckeckboxes</legend><br/>
+		Favorite food?<br/>
+		<label><input type="checkbox" name="food" value="Pizza">Pizza</label>
+		<label><input type="checkbox" name="food" value="Chipes">Chipes</label>
+		<label><input type="checkbox" name="food" value="Kale">Kale</label>
+
+		<hr>
+		<legend>Radiobuttons</legend><br/>
+		<label><input type="radio" name="food" value="Pizza">Pizza</label>
+		<label><input type="radio" name="food" value="Chipes" >Chipes</label>
+		<label><input type="radio" name="food" value="Kale" checked="true">Kale</label>
+		<input type="submit">
+
+	</form>
+	<form action="http://www.intro-webdesign.com" method = "GET">
+	<fieldset>
+		<legend>Form Verification</legend>
+
+		<label for ="fName">First Name:</label>
+		<input type = "text" name = "fName" id = "fName" required><br/>
+
+		<label for = "lName">Last Name:</label>
+		<input type = "text" name = "lName" id = "lName" required><br/>
+
+		<label for = "yesNick">Nickname?:</label>
+		<input id="yesNick" name="yesNick" type="checkbox" value="yes" onchange= "nicknameFunction()"/>	<br/>
+
+		<div id = "nick">
+		<label for = "nickname">Nickname:</label>
+		<input type = "text" name = "nickname" id = "nickname"><br/>
+		</div>
+
+		<input type = "submit" value = "Verify"/>
+	</fieldset>
+	</main>
+</body>
+</html>
