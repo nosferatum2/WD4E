@@ -1,0 +1,94 @@
+/* Document level adjustments */
+html {
+  font-size: 17px;
+}
+@media (max-width: 900px) {
+  html { font-size: 15px; }
+}
+@media (max-width: 400px) {
+  html { font-size: 13px; }
+}
+
+/* Type will scale with document */
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+
+body {
+  padding: 10px;
+}
+
+.page-wrap {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-content {
+  width: 66.66%;
+  padding-right: 10px;
+}
+
+aside {
+  width: calc(33.33% - 10px);
+}
+
+.footer-module {
+  font-size: 0.75rem;
+  -webkit-box-flex: 0;
+          flex: 0 0 90%;
+}
+
+.module {
+  border: 1px solid #ccc;
+  background: #eee;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+.module .module-control {
+  margin: -20px -20px 10px -20px;
+}
+
+.font-size-control {
+  background: #e77e23;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  font-size: 12px;
+}
+.font-size-control > * {
+  vertical-align: middle;
+}
+
+article {
+  font-size: 1.2rem;
+}
+article > h3 {
+  font-size: 1.5em;
+  margin: 0 0 0.5em;
+}
+article > time {
+  font-size: 0.9em;
+  color: #999;
+  display: block;
+}
+article > footer {
+  border-top: 1px solid #ccc;
+  padding-top: 0.5em;
+  font-size: 0.8em;
+}
+
+aside .module {
+  font-size: 0.9rem;
+}
+aside .module > h3 {
+  font-size: 1.4em;
+  margin: 0 0 0.4em 0;
+}
