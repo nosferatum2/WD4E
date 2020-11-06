@@ -1,42 +1,4 @@
 
-
-body{
-	margin: 2%;
-	border: 1px solid black;
-	background-color: #b3b3b3;
-	font-family: Verdana, "Times New Roman", Arial, sans-serif;
-
-}
-
-header {
-	background: #666666;
-	text-align: center;
-	line-height: 200%;
-	padding: 15px 0 10px 0;
-  	text-decoration: none;
-}
-
-nav {
-	font-variant: small-caps;
-	font-size: 1.2em;
-	text-align: left;
-}
-
-h1 {
-	font-size: 150%;
-	color: #FFFFFF;
-	background-color: #B3B3B3;
-	text-align: center;
-}
-
-h2 {
-	text-align: center;
-	font-size: 120%;
-	color: #FFFFFF;
-	background-color: #00B7EA;
-}
-
-
 /*====================== Navigation menu ========================*/
 nav ul {
 	list-style: none;
@@ -123,5 +85,19 @@ nav li ul li {
 	100% {
 		opacity: 1;
 		transform: translateY(0px);
+	}
+}
+
+/*Sizing column for a big screen. Singl colomn to three colomn*/
+@media screen and (min-width: 700px){
+	.column {
+		width:30%;
+		display: inline-block;
+		float: left;
+		margin-left: 2%;
+	}
+
+	h1{
+		font-size: 300%;
 	}
 }

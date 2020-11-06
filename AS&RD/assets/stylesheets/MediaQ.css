@@ -1,0 +1,44 @@
+/*@import url(somestyle.css) screen and (min-width: 600px)   - Media import*/
+/*@media screen and (min-width: 500px) { ... }		- Put Media query directly in the style sheet*/
+
+main {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+
+html, body {
+	background-color: #ffffff;
+}
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #404040;
+}
+	
+h1 {
+	font-size: 200%;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/*Sizing column for a big screen. Singl colomn to three colomn*/
+@media screen and (min-width: 700px){
+	.column {
+		width:30%;
+		display: inline-block;
+		float: left;
+		margin-left: 2%;
+	}
+
+	h1{
+		font-size: 300%;
+	} 
+}

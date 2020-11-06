@@ -1,0 +1,54 @@
+/*@import url(somestyle.css) screen and (min-width: 600px)   - Media import*/
+/*@media screen and (min-width: 500px) { ... }		- Put Media query directly in the style sheet*/
+@import url(nav700.css) screen and (min-width: 700px);
+
+main {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+
+body {
+	margin: 0 auto;
+	font-family: Verdana, "Times New Roman", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #404040;
+	background-color: #b3b3b3;
+
+	border: 1px solid black; /*Need too off after finish*/
+}
+
+h1 {
+	/*font-size: 200%;*/
+	margin: 0;
+	padding: 0;
+	font-size: 150%;
+	color: #FFFFFF;
+	background-color: #B3B3B3;
+}
+
+h2 {
+	font-size: 120%;
+	color: #FFFFFF;
+	background-color: #00B7EA;
+}
+
+h1, h2{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+header {
+	background: #666666;
+	line-height: 150%;
+	padding: 15px 0 15px 0;
+  	text-decoration: none;
+}
+
+header div:first-child{
+	text-align: center;
+}
+
+

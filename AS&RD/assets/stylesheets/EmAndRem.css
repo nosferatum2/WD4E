@@ -1,24 +1,3 @@
-/* Document level adjustments */
-html {
-  font-size: 17px;
-}
-@media (max-width: 900px) {
-  html { font-size: 15px; }
-}
-@media (max-width: 400px) {
-  html { font-size: 13px; }
-}
-
-/* Type will scale with document */
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2.5rem;
-}
-h3 {
-  font-size: 2rem;
-}
 
 
 body {
@@ -58,7 +37,7 @@ aside {
 }
 
 .font-size-control {
-  background: #e77e23;
+  background: #E77E23;
   padding: 10px;
   margin: 0 0 10px 0;
   font-size: 12px;
