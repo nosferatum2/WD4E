@@ -1,0 +1,27 @@
+/*@import url(somestyle.css) screen and (min-width: 600px)   - Media import*/
+/*@media screen and (min-width: 500px) { ... }		- Put Media query directly in the style sheet*/
+
+
+main{
+	margin: 0 0.2em;
+}
+
+div{
+  font-size:120%;
+  
+}
+
+div[class^="visible"]{
+  border: 1px solid black;
+  margin-top:3%;
+}
+
+div[class$=lg]{
+  color:red;
+}
+div[class$=md]{
+  color:blue;
+}
+div[class$=sm]{
+  color:green;
+}
