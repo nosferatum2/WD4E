@@ -1,0 +1,227 @@
+<!-- 
+Create a stylesheet that will style the page 
+as it appears in the example. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Responsive Design Lab</title>
+	<!-- <link rel="stylesheet" type="text/css" href="responsive.css"/> -->
+	<meta charset = "UTF-8">
+	<!-- It tells mobile browser's viewport how to behave. -->
+	<meta name='viewport' content='width=device-width, initial-scale=1'/>
+	<meta content='true' name='HandheldFriendly'/>
+	<meta content='width' name='MobileOptimized'/>
+	<meta content='yes' name='apple-mobile-web-app-capable'/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="responsive.css"> -->
+
+	<!-- My own style -->
+	<style>
+		body{
+		margin: 0;
+		padding:0;
+		background-color: rgba(0,0,255,.2);
+		font-size: 1em;
+		min-width: 500px;
+		color: #ffffff;
+
+	}
+	header, footer{
+		background-color:#0066FF;
+		padding: 1%;
+		margin: 1%;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+		color: #fff !important;
+		/*background-color: transparent;*/
+
+	}
+
+	.navbar{
+		margin-bottom: 0;
+	}
+
+	.navbar-nav > li > .dropdown-menu, .navbar{
+		background-color: #3077bc;
+	}
+	.page-header{
+		margin: 0 auto;
+		background-image: url(https://www.nimbulus.co.uk/wp-content/uploads/2016/03/Page-Header-Background-1400x170.gif);
+		background-size: cover;
+		text-align: center;
+	}
+
+
+	.myClass{
+		margin: 0em 1em;
+		padding:.75em;
+		border: 1px solid black;
+		border-radius: .25%;
+
+		/* Safari and Chrome */	
+		-webkit-column-count:3;
+		-moz-column-count: 3;
+		column-count:3;
+		
+	}
+
+	#big-image {
+		padding: 2em;
+		margin-bottom: 1.5em;
+		background: #4199cc;
+		background-image: url();
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 50vh;
+		text-align: center;
+	}
+
+	p {
+		font-size: 1.5rem;
+	}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div>
+				<a class="navbar-brand col-sm-12" href="../index.html">Advanced Styling with Responsive Design</a>
+			</div>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">week #1 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Fluid Measurements</a></li>
+							<li><a href="#">Fluid Measurements(Complited)</a></li>
+							<li><a href="#">Em and Rem</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">week #2 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Media Queries</a></li>
+							<li><a href="#">Responsive Navigation</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">week #3 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="active" href="">Bootstrap</a></li>
+							<li><a href="#">nav-tabs</a></li>
+							<li><a href="#">navbar</a></li>
+							<li><a href="#">dropdowns</a></li>
+							<li><a href="#">nav-pills</a></li>
+							<li><a href="#">Bootstrap Template</a></li>
+							<li><a href="#">Bootstrap Grid Exaple</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">week #4 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Advanced Navigation</a></li>
+							<li><a href="#">Responsive Image Thumbnails</a></li>
+							<li><a href="#">Bootstrap Tables</a></li>
+							<li><a href="#">Responsive Images</a></li>
+						</ul>
+					</li>
+			</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+<header class="page-header">
+	<h1>Welcome to my own Photo gallery!</h1>
+</header>
+
+<div class="hidden-xs" id="big-image"> <p>Preview picture.</p></div>
+<div class="container-fluid">
+	<div class="row">
+	<!-- Portfolio Items -->
+		<div class="col-sm-3 col-lg-2">
+			<div class="thumbnail">
+				<a href="https://newevolutiondesigns.com/images/freebies/dog-wallpaper-19.jpg"  class="img-responsive" target="_blank">
+					<img src="https://newevolutiondesigns.com/images/freebies/dog-wallpaper-19.jpg" alt="dog-wallpaper-19" class="img-responsive" onmouseover = "upDate(this)" onmouseout = "unDo()">
+					<p>Click and save this wonderful wallppapers.</p>
+				</a>
+			</div>
+		</div>
+		<div class="col-sm-3 col-lg-2">
+			<div class="thumbnail">
+				<a href="https://newevolutiondesigns.com/images/freebies/dog-wallpaper-17.jpg"  class="img-responsive" target="_blank">
+					<img src="https://newevolutiondesigns.com/images/freebies/dog-wallpaper-17.jpg" alt="dog-wallpaper-17" class="img-responsive" onmouseover = "upDate(this)" onmouseout = "unDo()">
+					<p>Click and save this wonderful wallppapers.</p>
+				</a>
+			</div>
+		</div>
+		<div class="col-sm-3 col-lg-2">
+			<div class="thumbnail">
+				<a href="https://newevolutiondesigns.com/images/freebies/dog-wallpaper-12.jpg"  class="img-responsive" target="_blank">
+					<img src="https://newevolutiondesigns.com/images/freebies/dog-wallpaper-12.jpg" alt="dog-wallpaper-12" class="img-responsive" onmouseover = "upDate(this)" onmouseout = "unDo()">
+					<p>Click and save this wonderful wallppapers.</p>
+				</a>
+			</div>
+		</div>
+		<div class="col-sm-3 col-lg-2">
+			<div class="thumbnail">
+				<a href="https://newevolutiondesigns.com/images/freebies/dog-wallpaper-7.jpg"  class="img-responsive" target="_blank">
+					<img src="https://newevolutiondesigns.com/images/freebies/dog-wallpaper-7.jpg" alt="dog-wallpaper-7" class="img-responsive" onmouseover = "upDate(this)" onmouseout = "unDo()">
+					<p>Click and save this wonderful wallppapers.</p>
+				</a>
+			</div>
+		</div>
+		<div class="col-sm-3 col-lg-2">
+			<div class="thumbnail">
+				<a href="https://newevolutiondesigns.com/images/freebies/dog-wallpaper-5.jpg"  class="img-responsive" target="_blank">
+					<img src="https://newevolutiondesigns.com/images/freebies/dog-wallpaper-5.jpg" alt="dog-wallpaper-5" class="img-responsive" onmouseover = "upDate(this)" onmouseout = "unDo()">
+					<p>Click and save this wonderful wallppapers.</p>
+				</a>
+			</div>
+		</div>
+		<div class="col-sm-3 col-lg-2">
+			<div class="thumbnail">
+				<a href="https://newevolutiondesigns.com/images/freebies/dog-wallpaper-4.jpg"  class="img-responsive" target="_blank">
+					<img src="https://newevolutiondesigns.com/images/freebies/dog-wallpaper-4.jpg" alt="dog-wallpaper-4" class="img-responsive" onmouseover = "upDate(this)" onmouseout = "unDo()">
+					<p>Click and save this wonderful wallppapers.</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<footer>
+	<h4>Here will be my contacts later.</h4>
+	<p>Thanks for understanding.</p>
+</footer>
+
+<script>
+	function upDate(previewPic){
+    	document.getElementById('big-image').style.backgroundImage = "url('" + previewPic.src + "')";
+	}
+
+	function unDo(){
+		document.getElementById('big-image').style.backgroundImage = "url('')";
+
+	}
+</script>
+</body>
+</html>
