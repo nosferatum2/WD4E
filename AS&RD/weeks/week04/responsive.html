@@ -18,7 +18,8 @@ as it appears in the example. -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-	<!-- <link rel="stylesheet" type="text/css" href="responsive.css"> -->
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<script src="treeAnime.js" type="module"></script>
 
 	<!-- My own style -->
 	<style>
@@ -206,6 +207,25 @@ as it appears in the example. -->
 		</div>
 	</div>
 </div>
+<hr>
+<div id="app">
+	<section class="container">
+		<article class="tile">
+			<figure class="tile__figure">
+				<img 
+					src="0001-smr.jpg" 
+					data-hover="0001-wtr.jpg" 
+					class="tile__image" 
+					alt="My image" 
+					width="100%" 
+				/>
+			</figure>
+		</article>
+	</section>
+
+	<canvas id="stage"></canvas>
+</div>
+
 
 
 <footer>

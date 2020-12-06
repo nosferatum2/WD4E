@@ -1,0 +1,30 @@
+- Create a series of wireframes for your site (also referred to as "portfolio")  
+- Generate original content 
+- Use the proper semantic and syntactic HTML tags to display your content
+- Apply CSS to your content to create a stylish and accessible site
+- Write media queries and/or use a framework to create a responsive site
+- Implement four "extras" that demonstrate the ability to apply web design theory or practice (JavaScript, plugins, Accessibility features, animation, etc.)
+
+_______
+
+- Each page must have at least two semantic tags (header, nav, footer, etc)
+- Each page must validate at validator.w3.org.
+- Each page must be responsive -- there must be at least two unique views
+- You must have at least 4 images on one of your pages.  (If this requirement doesn't "fit" your portfolio plan, please just make an extra page that fulfills it.  You can always unlink it after you have been peer -graded.
+- Each page must be styled.  The goal is not to impress, but to show competence.  So add enough to show that you know how to write CSS rules.  But peer-review with the knowledge that not everything will be beautiful.
+
+________
+
+write-up describing the changes you made from the original code. 
+
+________
+
+You need to add four elements to your site that are unique – something beyond what we did in the four previous courses.  You are encouraged to be as creative as you would like (and creative does not need to mean time-intensive).  Some options for these "extras" include:
+
+- Add custom JavaScript (e.g. incorporate dynamic content, use JS to perform verification, modify the DOM)
+- Enhance the accessibility of your page (e.g. put your site through the some subset of the WebAim quick evaluation reference - http://webaim.org/resources/evalquickref/)
+- Incorporate plugins  (e.g. Google Calendar, a map, parallax, etc.)  You will need to show what you did other than just copying code.  Did you need to change any of the attributes?  Change any of the links?
+- Include a Carousel for your images (don't forget to turn off the automatic start feature if you can!!)
+- Use a sticky footer to create a consistent look across different browser heights (we usually only consider widths…)
+- Add a third viewport layout (e.g. a table view that is different than mobile or large-screen) 
+
