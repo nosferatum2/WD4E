@@ -17,7 +17,10 @@ window.onscroll = function() {
 // Close an open collapsed navbar when clicking outside of the navbar element
 // Close dropdown menu in the mobile view
 $(document).click(function (event) {
+<<<<<<< HEAD
 	//need to rewrite to JS, not jQuery.
+=======
+>>>>>>> b0b33866804048b5670476a94d8f8056ea9d650a
     var clickover = $(event.target);
     var $navbar = $(".navbar-collapse");               
     var _opened = $navbar.hasClass("in");
@@ -27,6 +30,7 @@ $(document).click(function (event) {
 });
 
 // ===================== Back to Top Button ========================== 
+<<<<<<< HEAD
 
 
 // ===================== Google map ========================== 
@@ -88,3 +92,5 @@ function moreContent() {
 // var x = window.matchMedia("(max-width: 700px)")
 // myFunction(x) // Call listener function at run time
 // x.addListener(myFunction) // Attach listener function on state changes
+=======
+>>>>>>> b0b33866804048b5670476a94d8f8056ea9d650a
