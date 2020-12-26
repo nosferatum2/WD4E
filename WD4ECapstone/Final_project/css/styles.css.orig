@@ -18,8 +18,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
+<<<<<<< HEAD
   font-family: 'Work Sans';
   font-size: 20px;
+=======
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.3rem;
+>>>>>>> b0b33866804048b5670476a94d8f8056ea9d650a
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -31,6 +36,7 @@ body {
 }
 
 section{
+<<<<<<< HEAD
 	border: 2px solid black;
 }
 
@@ -51,6 +57,12 @@ h1{
   width: 100%;
 }
 
+=======
+	height: 800px;
+	border: 2px solid black;
+}
+
+>>>>>>> b0b33866804048b5670476a94d8f8056ea9d650a
 /* ===================== Navbar ========================== */
 #navbar {
   background-color: #333; /* Black background color */
@@ -75,14 +87,14 @@ h1{
 }
 
 .nav-hide{
-	top: -15em !important; 
+	top: -9rem !important; 
 }
 
-
+<<<<<<< HEAD
 /* ===================== More images button ========================== */
 .morecontent{
 	visibility: visible;
-	position: absolute;
+	position: inherit;
 	background-color: #4CAF50;
 	border: none;
 	font-size: 1.5rem;
@@ -117,4 +129,6 @@ h1{
 	transition: 0s
 }
 
+=======
+>>>>>>> b0b33866804048b5670476a94d8f8056ea9d650a
 /* ===================== Back to Top Button ========================== */
