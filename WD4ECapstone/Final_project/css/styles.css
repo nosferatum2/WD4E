@@ -10,6 +10,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -28,10 +29,12 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  position: static;
 }
 
 section{
 	border: 2px solid black;
+	position: inherit;
 }
 
 section img{
@@ -59,6 +62,7 @@ h1{
   top: 0; /* Stay on top */
   width: 100%; /* Full width */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 1000;
 }
 
 /* Style the navbar links */
@@ -82,7 +86,7 @@ h1{
 /* ===================== More images button ========================== */
 .morecontent{
 	visibility: visible;
-	position: absolute;
+	position: relative;
 	background-color: #4CAF50;
 	border: none;
 	font-size: 1.5rem;
@@ -95,6 +99,7 @@ h1{
 	text-decoration: none;
 	overflow: hidden;
 	cursor: pointer;
+	
 }
 
 .morecontent:after {

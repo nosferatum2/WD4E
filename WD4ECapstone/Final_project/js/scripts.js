@@ -73,6 +73,7 @@ function moreContent() {
   }
   
   more.style.visibility = "hidden";
+  more.style.padding = "0";
 } 
 
 
