@@ -1,15 +1,19 @@
 
+// ===================== Navbar and show "Go to top" Button ========================== 
+// When the user scrolls down, hides the navbar, pop-up "Go to top" Button. 
+// When the user scrolls up, shows the navbar, hides "Go to top" Button.
 
-// ===================== Navbar ========================== 
-// When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
+  var mybutton = document.getElementById("goTop"); //find button
   var currentScrollPos = window.pageYOffset;
   var el = document.getElementById("navbar");
   if (prevScrollpos > currentScrollPos) {
     el.classList.remove("nav-hide");
+    mybutton.style.display = "none";  //hide button
   } else {
     el.classList.add("nav-hide");
+    mybutton.style.display = "block"; //show button
   }
   prevScrollpos = currentScrollPos;
 } 
@@ -28,9 +32,36 @@ $(document).click(function (event) {
     }
 });
 
-// ===================== Back to Top Button ========================== 
+// ===================== Go to top Button logic ========================== 
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
+// ===================== Show more button ========================== 
+function moreContent() {
+  var more = document.getElementsByClassName("morecontent")[0];
+  var addcont = document.getElementById('addcont');
+  var listOfImg = [
+    'DJI_0003.jpg', 
+    'DJI_0006.jpg', 
+    'DJI_0013.jpg', 
+    'DJI_0014.jpg', 
+    'DJI_0024.jpg', 
+    'DJI_0029.jpg'
+    ];
 
+  for (i = 0, len = listOfImg.length; i < len; i++){
+    var imag = new Image();
+    imag.src = 'assets/photos/' + listOfImg[i];
+    imag.alt = 'alt';
+    imag.className = 'img-thumbnail';
+    addcont.appendChild(imag);
+  }
+  
+  more.style.visibility = "hidden";
+  more.style.padding = "0";
+}
 
 // ===================== Google map ========================== 
 function initMap() {
@@ -50,36 +81,6 @@ function initMap() {
     map: map,
   });
 }
-
-// ===================== Show more button ========================== 
-function moreContent() {
-  var more = document.getElementsByClassName("morecontent")[0];
-  var addcont = document.getElementById('addcont');
-  var listOfImg = [
-    'DJI_0003.jpg', 
-    'DJI_0006.jpg', 
-    'DJI_0013.jpg', 
-    'DJI_0014.jpg', 
-    'DJI_0024.jpg', 
-    'DJI_0029.jpg'
-    ];
-
-  for (i = 0, len = listOfImg.length; i < len; i++){
-  	var imag = new Image();
-    imag.src = 'assets/photos/' + listOfImg[i];
-    imag.alt = 'alt';
-    imag.className = 'img-thumbnail';
-    addcont.appendChild(imag);
-  }
-  
-  more.style.visibility = "hidden";
-  more.style.padding = "0";
-} 
-
-
-// ===================== Contact us ========================== 
-
-
 
 
 // ===================== Courusel download in a screen ========================== 
