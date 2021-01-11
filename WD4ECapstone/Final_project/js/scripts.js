@@ -19,7 +19,7 @@ window.onscroll = function() {
 } 
 
 // Close an open collapsed navbar when clicking outside of the navbar element
-// Close dropdown menu in the mobile view
+// Close dropdown menu
 $(document).click(function (event) {
 
 	//need to rewrite to JS, not jQuery.
@@ -40,15 +40,18 @@ function topFunction() {
 
 // ===================== Show more button ========================== 
 function moreContent() {
-  var more = document.getElementsByClassName("morecontent")[0];
+  var more = document.getElementsByClassName("morecontent")[0]; //Here would be better ById. Its demonstrate that i understand how to using array.
   var addcont = document.getElementById('addcont');
   var listOfImg = [
-    'DJI_0003.jpg', 
     'DJI_0006.jpg', 
-    'DJI_0013.jpg', 
-    'DJI_0014.jpg', 
-    'DJI_0024.jpg', 
-    'DJI_0029.jpg'
+    'DJI_0031.jpg', 
+    'DJI_0032.jpg', 
+    'DJI_0033.jpg', 
+    'DJI_0034.jpg', 
+    'DJI_0035.jpg',
+    'DJI_0036.jpg',
+    'DJI_0037.jpg',
+    'DJI_0038.jpg'
     ];
 
   for (i = 0, len = listOfImg.length; i < len; i++){
@@ -81,19 +84,4 @@ function initMap() {
     map: map,
   });
 }
-
-
-// ===================== Courusel download in a screen ========================== 
-// If min-width: 768px, download courusel
-
-// function myFunction(x) {
-//   if (x.matches) { // If media query matches
-//     document.body.style.backgroundColor = "yellow";
-//   } else {
-//    document.body.style.backgroundColor = "pink";
-//   }
-// }
-// var x = window.matchMedia("(max-width: 700px)")
-// myFunction(x) // Call listener function at run time
-// x.addListener(myFunction) // Attach listener function on state changes
 

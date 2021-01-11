@@ -34,30 +34,31 @@ body {
   position: static;
 }
 
-section{
+section {
 	position: inherit;
 }
 
-section img{
+section img {
 	width: 100%;
 	height: auto;
+	margin: 0.2rem;
 }
 
-h1{
+h1 {
 	padding-top: 70px;
 	text-align: center;
 }
 
-h2, p{
+h2, p {
 	padding: 0 1em;
-	text-align: justify;
 }
 
-p{
+#history p {
+	text-align: justify;
 	text-indent: 1em;
 }
 
-a{
+a {
 	color: #fff;
 }
 
@@ -67,11 +68,10 @@ a{
   height: 400px;
   width: 95%;
   margin: auto;
-  max-width: 768px;
 }
 
 /* ===================== Navbar ========================== */
-#navbar{
+#navbar {
   background-color: #112e51; /* Black background color */
   position: fixed; /* Make it stick/fixed */
   padding: 1.5rem;
@@ -93,13 +93,13 @@ a{
   color: black;
 }
 
-.nav-hide{
+.nav-hide {
 	top: -15em !important; 
 }
 
 
 /* ===================== More images button ========================== */
-.morecontent{
+.morecontent {
 	visibility: visible;
 	position: relative;
 	background-color: #112e51;
@@ -137,7 +137,7 @@ a{
 }
 
 /* ===================== Contact form ========================== */
-textarea{
+textarea {
 	height: 200px;
 }
 input[type=text], input[type=email], select, textarea {
@@ -167,7 +167,7 @@ input[type=submit]:hover {
 
 
 /* ===================== Footer styling ========================== */
-footer{
+footer {
 	margin-top: 1em;
 	padding-bottom: 1.5em;
 	padding-left: 1em;
@@ -176,7 +176,7 @@ footer{
 	background-color: #112e51;
 }
 
-footer a{
+footer a {
 	margin: 0 auto;
 	display: inline-flex;
 	justify-content: center;
@@ -184,8 +184,12 @@ footer a{
 	margin-right: 5%;
 }
 
-#about div a{
+#about a {
 	text-decoration: none;
+}
+
+#about p {
+	padding: 0;
 }
 
 /* ===================== Back to Top Button ========================== */
@@ -206,4 +210,33 @@ footer a{
 
 #goTop:hover {
   background-color: #003D66;
+}
+
+/* ===================== Media queries ========================== */
+@media screen and (min-width: 768px) {
+	.img-thumbnail,
+	.morecontent {
+		display: none;
+	}
+
+	.item a {
+		height: 100%;
+	}
+
+	#history, 
+	#location {
+		float: left;
+		width: 50%;
+		margin-top: 2em;
+		overflow: hidden;
+	}
+
+	#history {
+		height: 400px;
+		overflow-y: scroll;
+	}
+
+	#contact {
+		clear: both;
+	}
 }

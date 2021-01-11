@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Zmiev steep, zmiev steeps, Zmievskie kruchi, zmiev kruchi">
     <title>Nature of Zmiev</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet"> 
@@ -16,9 +17,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 	<!-- Add Google map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPogL_7Wt6HQzyiqNsnrhDM1R9eumA8fc&callback=initMap&libraries=&v=weekly"
-   	defer
-    ></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPogL_7Wt6HQzyiqNsnrhDM1R9eumA8fc&callback=initMap&libraries=&v=weekly" defer></script> <!-- defer - for third party scripts --> 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <script src="js/scripts.js"></script>
@@ -35,7 +34,7 @@
 				<span class="icon-bar"></span>                        
 			</button>
 
-			<a class="navbar-brand" href="#home">Nature of Zmiev</a>
+			<a class="navbar-brand" href="index.html">Nature of Zmiev</a>
 	    </div>
 	    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
 			<ul class="nav navbar-nav">
@@ -51,8 +50,81 @@
 		<section>
 			<h1>Zmiev steep</h1>
 			<div class="container" id="addcont">
-				<img src="assets/photos/DJI_0013.jpg" class="img-thumbnail" alt="fst"/>
-				<img src="assets/photos/DJI_0013.jpg" class="img-thumbnail" alt="fst"/>
+				<div id="myCarousel" class="carousel slide hidden-xs">
+			    <!-- Indicators -->
+			    <ol class="carousel-indicators">
+			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#myCarousel" data-slide-to="1"></li>
+			      <li data-target="#myCarousel" data-slide-to="2"></li>
+			      <li data-target="#myCarousel" data-slide-to="3"></li>
+			      <li data-target="#myCarousel" data-slide-to="4"></li>
+			      <li data-target="#myCarousel" data-slide-to="5"></li>
+			      <li data-target="#myCarousel" data-slide-to="6"></li>
+			      <li data-target="#myCarousel" data-slide-to="7"></li>
+			      <li data-target="#myCarousel" data-slide-to="8"></li>
+			      <li data-target="#myCarousel" data-slide-to="9"></li>
+			      <li data-target="#myCarousel" data-slide-to="10"></li>
+			    </ol>
+
+			    <!-- Wrapper for slides -->
+			    <div class="carousel-inner">
+			      <div class="item active">
+			        <img class="d-block w-100" src="assets/photos/DJI_0006.jpg" alt="DJI_0006.jpg">
+			      </div>
+			    
+			      <div class="item">
+			        <img src="assets/photos/DJI_0014.jpg" alt="DJI_0014.jpg">
+			      </div>
+
+			      <div class="item">
+			        <img src="assets/photos/DJI_0024.jpg" alt="DJI_0024.jpg">
+			      </div>
+
+			      <div class="item">
+			        <img src="assets/photos/DJI_0031.jpg" alt="DJI_0031.jpg">
+			      </div>
+
+			      <div class="item">
+			        <img src="assets/photos/DJI_0032.jpg" alt="DJI_0032.jpg">
+			      </div>
+
+			      <div class="item">
+			        <img src="assets/photos/DJI_0033.jpg" alt="DJI_0033.jpg">
+			      </div>
+
+			      <div class="item">
+			        <img src="assets/photos/DJI_0034.jpg" alt="DJI_0034.jpg">
+			      </div>
+
+			      <div class="item">
+			        <img src="assets/photos/DJI_0035.jpg" alt="DJI_0035.jpg">
+			      </div>
+
+			      <div class="item">
+			        <img src="assets/photos/DJI_0036.jpg" alt="DJI_0036.jpg">
+			      </div>
+
+			      <div class="item">
+			        <img src="assets/photos/DJI_0037.jpg" alt="DJI_0037.jpg">
+			      </div>
+
+			      <div class="item">
+			        <img src="assets/photos/DJI_0038.jpg" alt="DJI_0038.jpg">
+			      </div>
+			    </div>
+
+			    <!-- Left and right controls -->
+			    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			      <span class="glyphicon glyphicon-chevron-left"></span>
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+			      <span class="glyphicon glyphicon-chevron-right"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
+			  </div>
+				<img src="assets/photos/DJI_0024.jpg" class="img-thumbnail" alt="fst"/>
+				<img src="assets/photos/DJI_0014.jpg" class="img-thumbnail" alt="fst"/>
 			<button class="morecontent" onclick="moreContent()">
 				More images...
 			</button>
@@ -86,21 +158,27 @@
 		</section>
 	</main>
 	<footer id="about">
-		<div class="container">
 			<h3>Follow by me</h3>
-			<a href="https://www.instagram.com/id_nft" target="_blink">
+			<a href="https://www.instagram.com/id_nft" target="_blank" rel="noopener">
 				<i class="fab fa-instagram fa-2x"></i>
 				Instagram
 			</a>			
-			<a href="https://www.linkedin.com/in/artur-voshchanikin-b593571b9"  target="_blink">
+			<a href="https://www.linkedin.com/in/artur-voshchanikin-b593571b9"  target="_blank" rel="noopener">
 				<i class="fab fa-linkedin fa-2x"></i>
 				LinkedIn
 			</a>
-			<a href="https://github.com/nosferatum2"  target="_blink">
+			<a href="https://github.com/nosferatum2"  target="_blank" rel="noopener">
 				<i class="fab fa-github fa-2x"></i>
 				GitHub
 			</a>
-		</div>
+			<hr/>
+			<p>Thanks for content:</p>
+			<a class="thanks" href="https://find-way.com.ua/oblast/kharkivska/zmiiv/zmiivski-kruchi-zmiiv"  target="_blank" rel="noopener">
+			find-way.com
+			</a>
+			<a class="thanks" href="https://pokatushki.kh.ua/places/195-zmievskie-kruchi.html"  target="_blank" rel="noopener">
+			pokatushki.kh.ua
+			</a>
 	</footer>
 	<button onclick="topFunction()" id="goTop" title="Go to top">
 		<i class="fas fa-angle-up fa-2x"></i>
