@@ -1,7 +1,8 @@
-<h2>Web Design for Everybody<h2>
-<a href="https://nosferatum2.github.io/WD4E/WD4ECapstone/Final_project/index.html" traget="_blank">
-  https://nosferatum2.github.io/WD4E/WD4ECapstone/Final_project/index.html - This is my latest project with all the material studied</a> <br>
-https://nosferatum2.github.io/WD4E/WD4ECapstone/Final_project/ - Final project folder<br>
+<h2>Web Design for Everybody</h2>
+This is my latest project with all the material studied:
+https://nosferatum2.github.io/WD4E/WD4ECapstone/Final_project/index.html<br>
+Final project folder
+https://nosferatum2.github.io/WD4E/WD4ECapstone/Final_project/ <br>
 <hr>
 My practices:<br>
 
