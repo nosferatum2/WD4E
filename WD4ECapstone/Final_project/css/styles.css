@@ -184,6 +184,10 @@ footer a {
 	margin-right: 5%;
 }
 
+a .fa-2x {
+	padding-right: 0.5rem;
+}
+
 #about a {
 	text-decoration: none;
 }
