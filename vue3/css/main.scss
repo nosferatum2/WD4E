@@ -1,0 +1,297 @@
+/* ===================== Main ========================== */
+/*1 rem = 16px, 1em = font-size value*/
+$font-col: #ffffff;
+$bg-col: #0071bc;
+$nav-col: #112e51;
+
+* {
+    box-sizing: border-box;
+
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: #00000000;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: $font-col;
+    text-align: left;
+    background-color: $bg-col;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    position: static;
+}
+
+section {
+    position: inherit;
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0.2rem;
+    }
+}
+
+h1 {
+    padding-top: 70px;
+    text-align: center;
+}
+
+h2,
+p {
+    padding: 0 1em;
+}
+
+#history p {
+    text-align: justify;
+    text-indent: 1em;
+}
+
+a {
+    color: $font-col;
+}
+
+/* Set the size of the div element that contains the map */
+
+#map {
+    height: 400px;
+    width: 95%;
+    margin: auto;
+}
+
+/* ===================== Navbar ========================== */
+
+#navbar {
+    background-color: $nav-col;    /* Black background color */
+    position: fixed;    /* Make it stick/fixed */
+    padding: 1.5rem;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;   /* Transition effect when sliding down (and up) */
+    z-index: 1000;
+
+    a {
+        color: $font-col;
+        padding: 15px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    }
+}
+
+/* Style the navbar links */
+
+.nav-hide {
+    top: -15em !important;
+}
+
+/* ===================== More images button ========================== */
+
+.morecontent {
+    visibility: visible;
+    position: relative;
+    background-color:$nav-col;
+    border: none;
+    color: $font-col;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    -webkit-transition-duration: 1.4s;  /* Safari */
+    transition-duration: 1.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:after {
+        content: "";
+        background: #5b95dc;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 1.8s;
+    }
+
+    &:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s;
+    }
+}
+
+/* ===================== Contact form ========================== */
+
+input {
+    &[type="text"],
+    &[type="email"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        background-color: #4773aa;
+    }
+}
+
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #4773aa;
+}
+
+textarea {
+    height: 200px;
+}
+
+button[type="submit"] {
+    background-color: $nav-col;
+    color: $font-col;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #1a4375;
+    }
+}
+
+#contact{
+    p{
+        color: $font-col;
+        background-color:#981b1e;
+        
+    }
+}
+
+/* ===================== Footer styling ========================== */
+
+footer {
+    margin-top: 1em;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    background-color: $nav-col;
+
+    a {
+        margin: 0 auto;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5%;
+    }
+}
+
+a .fa-2x {
+    padding-right: 0.5rem;
+}
+
+#about {
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        padding: 0;
+    }
+}
+
+/* ===================== Back to Top Button ========================== */
+
+#goTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #112e5161; /*here added opaccity (two last numbers)*/
+    color: $font-col;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: #003d66;
+    }
+}
+
+/* ===================== Media queries ========================== */
+/*Medium screen*/
+@media screen and (min-width: 768px) {
+    .img-thumbnail,
+    .morecontent {
+        display: none;
+    }
+
+    .item a {
+        height: 100%;
+    }
+}
+
+/*Large screen*/
+@media screen and (min-width: 992px) {
+    #history,
+    #location {
+        float: left;
+        width: 50%;
+        margin-top: 2em;
+        overflow: hidden;
+    }
+
+    #history {
+        height: 400px;
+        overflow-y: scroll;
+    }
+
+    #contact {
+        clear: both;
+    }
+}
